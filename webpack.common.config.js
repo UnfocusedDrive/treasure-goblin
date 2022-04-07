@@ -7,7 +7,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$|\.jsx?$/,
+        test: /\.tsx?$|\.jsx?$/i,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
@@ -34,7 +34,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx', 'ts', 'tsx']
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
   },
   plugins: [
     new CleanWebpackPlugin()

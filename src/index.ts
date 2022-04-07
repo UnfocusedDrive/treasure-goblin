@@ -1,1 +1,2 @@
-console.log('hi');
+import util from './util/common';
+console.log('hi', util);

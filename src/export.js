@@ -1,1 +1,3 @@
-export default { placeholder: "Hello, is it me you're looking for?" }
+import util from './util/common';
+
+export default util;
