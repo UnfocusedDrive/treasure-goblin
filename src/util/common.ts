@@ -86,6 +86,11 @@ export default {
   num2Str: val => `${parseInt(val, 10)}`,
   toPx: num => `${num}px`,
   toStr: val => `${val}`,
+  /**
+   * Trim leading zeroes from number string
+   * @param {string} string - number string
+   * @returns {string} of trimmed leading zeroes
+   */
   trimLeadingZeroes: string => {
     return string.split('.').map(s => {
       if (s.length > 1) {
