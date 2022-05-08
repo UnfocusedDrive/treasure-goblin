@@ -20,6 +20,8 @@ module.exports = merge(commonConfig, {
       type: 'umd',
       umdNamedDefine: true
     },
+    // Resolution for 'self' used in nodeJS ENV
+    // https://github.com/webpack/webpack/issues/6525
     globalObject: `(typeof self !== 'undefined' ? self : this)`
   }
 });
