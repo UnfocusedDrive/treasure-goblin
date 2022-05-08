@@ -15,10 +15,9 @@ module.exports = merge(commonConfig, {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    library: {
-      name:'treasure-goblin',
-      type: 'umd',
-      umdNamedDefine: true
-    }
+    library: 'treasure-goblin',
+    type: 'umd',
+    umdNamedDefine: true,
+    globalObject: 'this'
   }
 });
