@@ -18,8 +18,8 @@ module.exports = merge(commonConfig, {
     library: {
       name: 'treasure-goblin',
       type: 'umd',
-      umdNamedDefine: true,
-      globalObject: `(typeof self !== 'undefined' ? self : this)`
-    }
+      umdNamedDefine: true
+    },
+    globalObject: `(typeof self !== 'undefined' ? self : this)`
   }
 });
