@@ -3,19 +3,15 @@
   "description": "You get utilities for days!",
   "version": "0.0.0-alpha.0",
   "private": true,
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "files": [
     "dist",
-    "lib",
     "src"
   ],
   "scripts": {
-    "build": "npm run test && npm run build-standalone && npm run build-lib",
-    "build-standalone": "webpack --mode=production",
+    "build": "npm run test && npm run build-lib",
     "build-lib": "webpack --mode=production --config webpack.lib.config.js",
     "prepare": "npm run build",
-    "start": "webpack serve --mode=development --open",
-    "start:production": "webpack serve --mode=production --open",
     "test": "ts-mocha -p tsconfig.json",
     "watch": "webpack --watch"
   },

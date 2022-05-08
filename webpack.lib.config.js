@@ -12,13 +12,13 @@ module.exports = merge(commonConfig, {
     contentBase: './dist',
   },
   entry: './src/export.js',
-  devtool: 'inline-source-map',
   output: {
-    path: path.resolve(__dirname, 'lib'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     library: {
-      name:'warp-gate',
-      type: 'umd'
+      name:'treasure-goblin',
+      type: 'umd',
+      umdNamedDefine: true
     }
   }
 });
