@@ -21,6 +21,6 @@ module.exports = merge(commonConfig, {
       umdNamedDefine: true
 
     },
-    globalObject: 'this'
+    globalObject: 'typeof self !== \'undefined\' ? self : this',
   }
 });
