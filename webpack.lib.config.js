@@ -16,7 +16,7 @@ module.exports = merge(commonConfig, {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     library: 'treasure-goblin',
-    type: 'umd',
+    libraryTarget: 'umd',
     umdNamedDefine: true,
     globalObject: 'this'
   }
