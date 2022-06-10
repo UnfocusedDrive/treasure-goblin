@@ -1,2 +1,2 @@
 # treasure-goblin
-You get utilities for days!
+Plenty of utilities to last days or even weeks!

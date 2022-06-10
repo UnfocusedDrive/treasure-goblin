@@ -1,8 +1,7 @@
 {
   "name": "@unfocused/treasure-goblin",
   "description": "You get utilities for days!",
-  "version": "0.0.0-alpha.0",
-  "private": true,
+  "version": "0.1.0-alpha.0",
   "main": "dist/treasure-goblin.js",
   "files": [
     "dist",
@@ -17,7 +16,6 @@
   },
   "dependencies": {
     "@babel/register": "^7.17.7",
-    "@unfocused/spawn": "git+https://github.com/UnfocusedDrive/Spawn.git#master",
     "ts-mocha": "^9.0.2"
   },
   "devDependencies": {
@@ -49,7 +47,7 @@
     "url": "git+https://github.com/UnfocusedDrive/treasure-goblin.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "John Yagiz",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/UnfocusedDrive/treasure-goblin/issues"
